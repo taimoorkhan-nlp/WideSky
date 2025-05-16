@@ -1,0 +1,28 @@
+services:
+  widesky:
+    build: ./widesky
+    container_name: widesky
+    depends_on:
+      - db
+    environment:
+      PG_HOST: db
+      PG_DB: bluesky
+      PG_USER: postgres
+      PG_PASS: postgres
+    volumes:
+      - ./logs/widesky:/app/logs
+
+  db:
+    image: postgres:15
+    container_name: widesky_db
+    environment:
+      POSTGRES_DB: bluesky
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
