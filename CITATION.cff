@@ -1,0 +1,25 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: WideSky
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Jack H.
+    family-names: Culbert
+    email: jack.culbert@gesis.org
+    orcid: 'https://orcid.org/0009-0000-1581-4021'
+    affiliation: GESIS - Leibniz Institute for the Social Sciences
+abstract: >-
+  A tool that ingests the BlueSky firehose for bulk analysis
+  and collection.
+keywords:
+  - BlueSky
+  - BSky
+  - Firehose
+  - ATProto
+  - Collector
+license: LGPL-3.0-only
